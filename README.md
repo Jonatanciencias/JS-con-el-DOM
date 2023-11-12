@@ -1,10 +1,14 @@
 # JS-con-el-DOM
+
+
 .------..------..------..------..------.
 |G.--. ||4.--. ||N.--. ||1.--. ||D.--. |
 | :/\: || :/\: || :(): || :/\: || :/\: |
 | :\/: || :\/: || ()() || (__) || (__) |
 | '--'G|| '--'4|| '--'N|| '--'1|| '--'D|
 `------'`------'`------'`------'`------'
+
+
 
 # Mini Proyectos de FreeCodeCamp
 
@@ -32,10 +36,10 @@
 
 ## Instrucciones de Uso
 
-1. Clona este repositorio: `git clone https://github.com/tu-usuario/mini-proyectos-fcc.git`
+1. Clona este repositorio: `git clone https://github.com/Jonatanciencias/JS-con-el-DOM.git`
 2. Abre el proyecto que te interese en tu navegador.
 3. ¡Explora, experimenta y diviértete mientras mejoras tus habilidades de manipulación del DOM con JavaScript!
 
-¡Espero que disfrutes trabajando en estos mini proyectos tanto como yo disfruté creándolos! Si tienes alguna sugerencia o encuentras algún problema, no dudes en abrir un problema (issue).
+¡Espero que disfrutes trabajando en estos mini proyectos tanto como yo disfruté con ellos! Si tienes alguna sugerencia o encuentras algún problema, no dudes en abrir un issue.
 
 Happy coding! 🚀
