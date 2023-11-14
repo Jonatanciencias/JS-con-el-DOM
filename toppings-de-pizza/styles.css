@@ -61,6 +61,11 @@ h1 {
     margin: 15px 0;
 }
 
+ul {
+    width: 95%;
+    height: 100%;
+}
+
 .fondoUno {
     background-color: var(--persian-orange);
     border-radius: 10px;
