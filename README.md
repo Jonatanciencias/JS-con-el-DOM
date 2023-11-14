@@ -1,11 +1,10 @@
 # JS-con-el-DOM
-
-                                ___   _ _    _  _   _   ___
-                               / __| | | |  | \| | / | |   \
-                              | (_ | |_  _| | .` | | | | |) |
-                               \___|   |_|  |_|\_| |_| |___/
-
-
+                                              ██████╗  ██╗  ██╗ ███╗   ██╗  ██╗ ██████╗
+                                             ██╔════╝  ██║  ██║ ████╗  ██║ ███║ ██╔══██╗
+                                             ██║  ███╗ ███████║ ██╔██╗ ██║ ╚██║ ██║  ██║
+                                             ██║   ██║ ╚════██║ ██║╚██╗██║  ██║ ██║  ██║
+                                             ╚██████╔╝      ██║ ██║ ╚████║  ██║ ██████╔╝
+                                              ╚═════╝       ╚═╝ ╚═╝  ╚═══╝  ╚═╝ ╚═════╝
 # Mini Proyectos de FreeCodeCamp
 
 ¡Bienvenido a mi colección de mini proyectos diseñados para practicar la manipulación del DOM con JavaScript! Estos proyectos son parte del curriculum de FreeCodeCamp y son ideales para afianzar tus habilidades front-end.
