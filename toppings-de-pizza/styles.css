@@ -1,4 +1,4 @@
-/* CSS HEX */
+/*Colores  Root para ser usados como variables en lugar del HEX del color*/
 :root {
     --silver: #c8c8c8ff;
     --silver-2: #b3b3b3ff;
@@ -27,9 +27,9 @@ body {
     background: url("assets/pizzaDark_blurred.png") no-repeat center center/cover;
 }
 
-/*Content*/
+/*Contenido*/
 
-#container {
+#contenedor {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,16 +38,18 @@ body {
     width: 80vh;
     max-width: 600px;
     background-color: antiquewhite;
-    border: 4px solid var(--raisin-black);
+    border: 4px solid var(--raisin-black); /*Caso de uso de colores Root*/
     border-radius: 15px;
 }
 
+/*Estilo para el titulo, tambien se podria usar el id #titulo*/
 h1 {
     font-size: 3rem;
     width: 100%;
     margin: 20px 10px;
 }
 
+/*Estilo para cada elemento de la lista de Toppings */
 .topping {
     font-size: 2rem;
     font-weight: bold;
@@ -61,17 +63,20 @@ h1 {
     margin: 15px 0;
 }
 
+/*Estilo para los elementos de la lista de Toppings, tambien se podria usar el id #toppingsList */
 ul {
     width: 95%;
     height: 100%;
 }
 
+/*Fondo para Toppings pares*/
 .fondoUno {
     background-color: var(--persian-orange);
     border-radius: 10px;
     padding: 15px;
 }
 
+/*Fondo para Toppings impares*/
 .fondoDos {
     background-color: var(--sage);
     border-radius: 10px;

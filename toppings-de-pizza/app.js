@@ -1,1 +1,2 @@
-const container = document.getElementById('container')
+const container = document.getElementById('contenedor')
+console.log(container);
