@@ -1,7 +1,5 @@
-const toppings =document.getElementsByClassName('topping');
+// ex01 Mostrar en consola el div con el id contenedor
+const contenedor = document.getElementById('contenedor');
+console.log(contenedor)
 
-for (const toppings of toppings) {
-    toppings.addEventListener('click', (e) => {
-        console.log(e.target.innerText);
-    })
-}
+// ex02
