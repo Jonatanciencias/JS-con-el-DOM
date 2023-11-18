@@ -16,7 +16,7 @@
     font-family: 'Lato', sans-serif;
 }
 
-/* General Styles */
+/* Estilos Generales */
 
 body {
     display: flex;
@@ -27,7 +27,7 @@ body {
     background: url("assets/pizzaDark_blurred.png") no-repeat center center/cover;
 }
 
-/*Contenido*/
+/*Estilo para el contenedor rectangular principal */
 
 #contenedor {
     display: flex;
