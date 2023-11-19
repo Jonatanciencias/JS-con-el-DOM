@@ -1,3 +1,5 @@
+// SELECCIONAR ELEMENTOS POR ID//
+
 // ex01 Mostrar en consola el div con el id contenedora
 // Solución:
 // const contenedor = document.getElementById('contenedor');
@@ -24,5 +26,15 @@
 // console.log(typeof titulo);
 
 // Ex06 Mostrar el texto contenido dentro del elemento titulo
-const titulo = document.getElementById('titulo');
-console.log(titulo.innerText);
+// const titulo = document.getElementById('titulo');
+// console.log(titulo.innerText);
+
+// Ex 07 Mostrar el tipo de dato que contiene el elemento titulo
+// const titulo =document.getElementById('titulo');
+// console.log(typeof titulo.innerText);
+
+// Ex 08 Mostrar el nombre de la etiqueta del elemento titulo
+// const titulo = document.getElementById('titulo');
+// console.log(titulo.tagName);
+
+// SELECCIONAR ELEMENTOS POR CLASE
