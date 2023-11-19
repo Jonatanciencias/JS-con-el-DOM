@@ -57,8 +57,12 @@
 // const toppings = document.getElementsByClassName('topping');
 // console.log(toppings[0]);
 
-// Ex 12
+// Ex 12 Mostrar el id del primer elemento de la clase topping
 // Solucion:
+// const toppings = document.getElementsByClassName('topping');
+// console.log(toppings[0].id);
+
+// SELECCIONAR EN BASE AL NOMBRE LA ETIQUETA
 
 // Ex 13
 // Solucion:
