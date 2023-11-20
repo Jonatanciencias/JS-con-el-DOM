@@ -108,4 +108,11 @@
 
 // PERSONALIZAR EL ESTILO CON JS
 
-// Ex 21
+// Ex 21 Cambiar el estilo del topping aceitunas con js
+// Solucion
+// const nuevoColorAceitunas = document.querySelector('.topping#aceitunas');
+// nuevoColorAceitunas.style.backgroundColor = 'yellow';
+// nuevoColorAceitunas.style.color = 'darkblue';
+// nuevoColorAceitunas.style.textTransform = 'uppercase';
+
+// TEXTO EN EL DOM
