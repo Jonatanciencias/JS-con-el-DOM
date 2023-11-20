@@ -64,11 +64,48 @@
 
 // SELECCIONAR EN BASE AL NOMBRE LA ETIQUETA
 
-// Ex 13
+// Ex 13 Seleccionr todos los elementos li
 // Solucion:
+// const misTopings = document.getElementsByTagName('li');
+// console.log(misTopings);
 
-// Ex 14
-// Solucion:
+// SELECCIONAR CSS
 
-// Ex 15
+// Ex 14 Seleccionar el id aceitunas con querySelector
 // Solucion:
+// const aceitunas = document.querySelector('#aceitunas');
+// console.log(aceitunas);
+
+// Ex 15 Seleccionar el primer elemento con la clase toppings
+// Solucion:
+// const aceitunas = document.querySelector('.topping');
+// console.log(aceitunas);
+
+// Ex 16 Mostrar el primer elemento que comparta la clase topping y la clase fondoDos
+// Solucion:
+// const  toppingPar = document.querySelector('.topping.fondoDos');
+// console.log(toppingPar);
+
+// Ex 17 Seleccionar el li con fondoUno
+// Solucion:
+// const  toppingImpar = document.querySelector('ul li.fondoUno');
+//  console.log(toppingImpar);
+
+// Ex 18  Seleccionar el primer topping que no tenga la clase fondoDos
+// Solucion
+// const primerFondoUno = document.querySelector('ul li:not(.fondoDos)');
+// console.log(primerFondoUno)
+
+// Ex 19 Mostrar todos los elementos que tienen la clase topping y la clase fondoDos
+// Solucion
+// const  fondoDosTodos = document.querySelectorAll('.topping.fondoDos');
+// console.log(fondoDosTodos);
+
+// Ex 20 acceder al segundo topping de la clase fondoDOs
+// Solucion
+// const primerFondoDos = document.querySelectorAll('.topping.fondoDos');
+// console.log(primerFondoDos[1]);
+
+// PERSONALIZAR EL ESTILO CON JS
+
+// Ex 21

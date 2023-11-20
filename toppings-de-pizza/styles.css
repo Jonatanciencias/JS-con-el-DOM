@@ -61,6 +61,7 @@ h1 {
     width: 100%;
     height: 80px;
     margin: 15px 0;
+    border: none;
 }
 
 /* Estilo para los elementos de la lista de Toppings, tambien se podria usar el id toppingsList */
@@ -74,6 +75,17 @@ ul {
     background-color: var(--persian-orange); /* Caso de uso de colores Root */
     border-radius: 10px;
     padding: 15px;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+/* Cambia para cuando paso por encima el puntero */
+.fondoUno:hover {
+    background-color: darkred;
+    color: lightgray;
+    cursor: pointer;
+    box-shadow: inset 400px 0 0 0 darkred;
 }
 
 /* Fondo para Toppings impares */
@@ -81,4 +93,15 @@ ul {
     background-color: var(--sage); /* Caso de uso de colores Root */
     border-radius: 10px;
     padding: 15px;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+/* Cambia para cuando paso por encima el puntero */
+.fondoDos:hover {
+    background-color: darkred;
+    color: lightgray;
+    cursor: pointer;
+    box-shadow: inset 400px 0 0 0 darkred;
 }
