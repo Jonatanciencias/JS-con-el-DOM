@@ -116,3 +116,38 @@
 // nuevoColorAceitunas.style.textTransform = 'uppercase';
 
 // TEXTO EN EL DOM
+
+// Ex 22 Mostrar el contenido de la lista de toppings
+// Solucion 1
+const listaDeToppings = document.getElementById('toppingsList');
+console.log('> innerText');
+console.log(listaDeToppings.innerText);
+console.log(typeof listaDeToppings.innerText);
+
+// Solucion 2
+console.log('> textContent - incluye la indentacion');
+console.log(listaDeToppings.textContent);
+console.log(typeof listaDeToppings.textContent);
+
+// Solucion 3
+console.log('> innerHTML - Incluye toda la estructura html');
+console.log(listaDeToppings.innerHTML);
+console.log(typeof listaDeToppings.innerHTML);
+
+// Ex 22
+// Solucion
+
+// Ex 22
+// Solucion
+
+// Ex 22
+// Solucion
+
+// Ex 22
+// Solucion
+
+// Ex 22
+// Solucion
+
+// Ex 22
+// Solucion
