@@ -1,3 +1,5 @@
+// Para ejecutar los ejercicios quita el comentario sobre el y abre el proyecto en un navegador, observa el resultado en la consola.
+
 // SELECCIONAR ELEMENTOS POR ID//
 
 // ex01 Mostrar en consola el div con el id contenedora
@@ -119,20 +121,37 @@
 
 // Ex 22 Mostrar el contenido de la lista de toppings
 // Solucion 1
-const listaDeToppings = document.getElementById('toppingsList');
-console.log('> innerText');
-console.log(listaDeToppings.innerText);
-console.log(typeof listaDeToppings.innerText);
+// const listaDeToppings = document.getElementById('toppingsList');
+// console.log('> innerText');
+// console.log(listaDeToppings.innerText);
+// console.log(typeof listaDeToppings.innerText);
 
 // Solucion 2
-console.log('> textContent - incluye la indentacion');
-console.log(listaDeToppings.textContent);
-console.log(typeof listaDeToppings.textContent);
+// console.log('> textContent - incluye la indentacion');
+// console.log(listaDeToppings.textContent);
+// console.log(typeof listaDeToppings.textContent);
 
 // Solucion 3
-console.log('> innerHTML - Incluye toda la estructura html');
-console.log(listaDeToppings.innerHTML);
-console.log(typeof listaDeToppings.innerHTML);
+// console.log('> innerHTML - Incluye toda la estructura html');
+// console.log(listaDeToppings.innerHTML);
+// console.log(typeof listaDeToppings.innerHTML);
+
+// Modificar texto con Js
+
+// Ex 23
+// Solucion
+
+// Ex 22
+// Solucion
+
+// Ex 22
+// Solucion
+
+// Ex 22
+// Solucion
+
+// Ex 22
+// Solucion
 
 // Ex 22
 // Solucion
