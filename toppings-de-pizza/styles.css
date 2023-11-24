@@ -109,3 +109,8 @@ ul {
     cursor: pointer;
     box-shadow: inset 400px 0 0 0 darkred;
 }
+
+#enlace {
+    padding-bottom: 15px;
+    text-decoration: none;
+}

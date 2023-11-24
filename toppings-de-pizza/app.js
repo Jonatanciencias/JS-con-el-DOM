@@ -136,13 +136,29 @@
 // console.log(listaDeToppings.innerHTML);
 // console.log(typeof listaDeToppings.innerHTML);
 
-// Modificar texto con Js
-
-// Ex 23
+// Ex 23 Cambiar el contenido del elemento con id titulo
 // Solucion
+// const titulo = document.getElementById('titulo');
+// titulo.innerText = 'Mis adiciones favoritas'
 
-// Ex 22
+// Ex 24 Mostrar los atributos del elemento con el nombre a
 // Solucion
+// const google = document.getElementsByTagName('a');
+// console.log(google[0].attributes);
+// console.log(google[0].getAttribute('href'));
+
+// Ex 25 remover el atributo href del elemento con el nombre a
+// Solucion
+// const google = document.getElementsByTagName('a');
+//console.log(google[0].removeAttribute('href'));
+
+// Ex 25 asignar un nuevo texto y cambiar el href del elemento con el nombre a
+// Solucion
+const google = document.getElementsByTagName('a');
+google[0].innerText = 'YouTube';
+google[0].setAttribute('href', 'https://www.youtube.com/');
+console.log(google[0].innerText);
+console.log(google[0].getAttribute('href'));
 
 // Ex 22
 // Solucion
