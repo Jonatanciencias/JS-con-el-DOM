@@ -154,14 +154,24 @@
 
 // Ex 25 asignar un nuevo texto y cambiar el href del elemento con el nombre a
 // Solucion
-const google = document.getElementsByTagName('a');
-google[0].innerText = 'YouTube';
-google[0].setAttribute('href', 'https://www.youtube.com/');
-console.log(google[0].innerText);
-console.log(google[0].getAttribute('href'));
+// const google = document.getElementsByTagName('a');
+// google[0].innerText = 'YouTube';
+// google[0].setAttribute('href', 'https://www.youtube.com/');
+// console.log(google[0].innerText);
+// console.log(google[0].getAttribute('href'));
 
-// Ex 22
+// Ex 22 Modificar las clases del primer elemento con la clase toppings
 // Solucion
+const  primerTopping = document.querySelector('.topping');
+console.log(primerTopping.classList);
+
+// agregamos la clse nuevoSabor
+primerTopping.classList.add('nuevoSabor');
+console.log(primerTopping.classList);
+
+// Eliminamos la clase fondoUno
+primerTopping.classList.remove('fondoUno');
+console.log(primerTopping.classList);
 
 // Ex 22
 // Solucion

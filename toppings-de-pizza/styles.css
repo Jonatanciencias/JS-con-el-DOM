@@ -114,3 +114,22 @@ ul {
     padding-bottom: 15px;
     text-decoration: none;
 }
+
+/*Nuevo sabor*/
+
+.nuevoSabor {
+    background-color: aquamarine; /* Caso de uso de colores Root */
+    border-radius: 10px;
+    padding: 15px;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+/* Cambia para cuando paso por encima el puntero */
+.nuevoSabor:hover {
+    background-color: greenyellow;
+    color: darkslategray;
+    cursor: pointer;
+    box-shadow: inset 400px 0 0 0 greenyellow;
+}
