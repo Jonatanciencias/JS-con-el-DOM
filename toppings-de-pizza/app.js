@@ -162,19 +162,21 @@
 
 // Ex 22 Modificar las clases del primer elemento con la clase toppings
 // Solucion
-const  primerTopping = document.querySelector('.topping');
-console.log(primerTopping.classList);
+// const  primerTopping = document.querySelector('.topping');
+// console.log(primerTopping.classList);
 
-// agregamos la clse nuevoSabor
-primerTopping.classList.add('nuevoSabor');
-console.log(primerTopping.classList);
+// agregamos la clase nuevoSabor
+// primerTopping.classList.add('nuevoSabor');
+// console.log(primerTopping.classList);
 
 // Eliminamos la clase fondoUno
-primerTopping.classList.remove('fondoUno');
-console.log(primerTopping.classList);
+// primerTopping.classList.remove('fondoUno');
+// console.log(primerTopping.classList);
 
-// Ex 22
+// Ex 22 Verificar si el elemento primer topping tiene la clase
 // Solucion
+// const primerToping = document.querySelector('.topping');
+// console.log(primerToping.classList.contains('fondoUno'));
 
 // Ex 22
 // Solucion
