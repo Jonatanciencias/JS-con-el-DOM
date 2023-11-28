@@ -178,8 +178,16 @@
 // const primerToping = document.querySelector('.topping');
 // console.log(primerToping.classList.contains('fondoUno'));
 
-// Ex 22
+// Ex 22 Añadir un nuevo elemento html al elemento con id lista-toppings
 // Solucion
+const  listaDeToppings = document.getElementById('lista-toppings');
+
+const quesoExtra = document.createElement('li');
+quesoExtra.classList.add('topping', 'fondoUno');
+quesoExtra.innerText = 'Queso Extra';
+
+listaDeToppings.append(quesoExtra);
+
 
 // Ex 22
 // Solucion
