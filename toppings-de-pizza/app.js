@@ -189,8 +189,10 @@ quesoExtra.innerText = 'Queso Extra';
 listaDeToppings.append(quesoExtra);
 
 
-// Ex 22
+// Ex 22 Eliminar elemento html al elemento quesoExtra
 // Solucion
+
+quesoExtra.remove();
 
 // Ex 22
 // Solucion
