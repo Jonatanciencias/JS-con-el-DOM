@@ -152,7 +152,7 @@
 // const google = document.getElementsByTagName('a');
 //console.log(google[0].removeAttribute('href'));
 
-// Ex 25 asignar un nuevo texto y cambiar el href del elemento con el nombre a
+// Ex 26 asignar un nuevo texto y cambiar el href del elemento con el nombre a
 // Solucion
 // const google = document.getElementsByTagName('a');
 // google[0].innerText = 'YouTube';
@@ -160,7 +160,7 @@
 // console.log(google[0].innerText);
 // console.log(google[0].getAttribute('href'));
 
-// Ex 22 Modificar las clases del primer elemento con la clase toppings
+// Ex 27 Modificar las clases del primer elemento con la clase toppings
 // Solucion
 // const  primerTopping = document.querySelector('.topping');
 // console.log(primerTopping.classList);
@@ -173,32 +173,45 @@
 // primerTopping.classList.remove('fondoUno');
 // console.log(primerTopping.classList);
 
-// Ex 22 Verificar si el elemento primer topping tiene la clase
+// Ex 28 Verificar si el elemento primer topping tiene la clase
 // Solucion
 // const primerToping = document.querySelector('.topping');
 // console.log(primerToping.classList.contains('fondoUno'));
 
 // Ex 22 Añadir un nuevo elemento html al elemento con id lista-toppings
 // Solucion
-const  listaDeToppings = document.getElementById('lista-toppings');
+// const  listaDeToppings = document.getElementById('lista-toppings');
+// const quesoExtra = document.createElement('li');
 
-const quesoExtra = document.createElement('li');
-quesoExtra.classList.add('topping', 'fondoUno');
-quesoExtra.innerText = 'Queso Extra';
+// quesoExtra.classList.add('topping', 'fondoUno');
+// quesoExtra.innerText = 'Queso Extra';
 
-listaDeToppings.append(quesoExtra);
+// listaDeToppings.append(quesoExtra);
 
+// Ex 29 Eliminar elemento html al elemento quesoExtra
+// Solucion
+// quesoExtra.remove();//
 
-// Ex 22 Eliminar elemento html al elemento quesoExtra
+// Recorrer el DOM
+// Ex 30 Obtener el parent NOde y element de la lista-topping
 // Solucion
 
-quesoExtra.remove();
+// const listaDeTopping = document.getElementById('lista-toppings');
 
-// Ex 22
+// console.log(listaDeTopping.parentElement);
+// console.log(listaDeTopping.parentNode);
+
+// Ex 31 Obtener los nodos child de la lista-toppings
 // Solucion
 
-// Ex 22
-// Solucion
+// const listaDeToppings = document.getElementById('lista-toppings');
+
+// console.log(listaDeToppings.children);
+// console.log(listaDeToppings.children[0]);
+// console.log(listaDeToppings.firstElementChild);
+// console.log(listaDeToppings.lastElementChild);
+// console.log(listaDeToppings.childNodes);
+// console.log(listaDeToppings.childElementCount);
 
 // Ex 22
 // Solucion
