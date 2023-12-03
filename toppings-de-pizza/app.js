@@ -213,11 +213,15 @@
 // console.log(listaDeToppings.childNodes);
 // console.log(listaDeToppings.childElementCount);
 
-// Ex 22
+// Ex 32 Obtener el elemento hermano antecesor y posterior de lista-toppings
+// Solucion
+// const listaDeToppings = document.getElementById('lista-toppings');
+
+// console.log(listaDeToppings.previousElementSibling);
+// console.log(listaDeToppings.nextElementSibling);
+
+// Ex 33
 // Solucion
 
-// Ex 22
-// Solucion
-
-// Ex 22
+// Ex 34
 // Solucion
