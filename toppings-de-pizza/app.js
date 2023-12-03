@@ -220,8 +220,50 @@
 // console.log(listaDeToppings.previousElementSibling);
 // console.log(listaDeToppings.nextElementSibling);
 
-// Ex 33
+// MANEJAR EVENTOS
+
+// Ex 33 Mostrar en la consola un texto al hacer clic
+// Solucion
+
+// Se debe asignar <onclick="mostrarClic('Aceitunas')"> a los elementos de ls lista toppings
+
+// function mostrarClic(toppings) {
+//     console.log(toppings);
+// }
+
+// Ex 34 Mostrar los valores de los toppings en consola al hacer click
 // Solucion
 
 // Ex 34
 // Solucion
+
+// Ex 34
+// Solucion
+
+// Ex 34
+// Solucion
+
+// Ex 34
+// Solucion
+
+// Ex 34
+// Solucion
+
+// Ex 34
+// Solucion
+
+// Ex 34
+// Solucion
+
+// Ex 34
+// Solucion
+
+// Ex 34
+// Solucion
+
+// Ex 34
+// Solucion
+
+
+
+
