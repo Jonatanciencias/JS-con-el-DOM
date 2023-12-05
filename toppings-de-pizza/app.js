@@ -231,45 +231,41 @@
 //     console.log(toppings);
 // }
 
-// Ex 34 Agregar un adEventListener
+// Ex 34 Agregar un adEventListener al hacer clic en albahaca que muestre
+// su informacion
 // Solucion
 
-const albahaca = document.getElementById('albahaca');
+//const albahaca = document.getElementById('albahaca');
 
-function mostrarClic(topping) {
-    console.log(topping);
+//function mostrarClic(e) {
+//    console.log(e);
+//    console.log(e.target);
+//    console.log(e.target.innerText);
+//}
+//albahaca.addEventListener('click', mostrarClic);
+
+// Ex 35 Asignar un adEventListener a todos los toppings para mostrar informacion
+// Solucion1
+
+// const toppings = document.getElementsByClassName('topping');
+//
+// function mostrarClic(e){
+//     console.log(e.target.innerText);
+// }
+//
+// for (const topping of toppings){
+//     topping.addEventListener('click', mostrarClic);
+// }
+
+// Solucion 2
+
+const toppings = document.getElementsByClassName('topping');
+
+for (const topping of toppings){
+    topping.addEventListener('click', (e) => {
+        console.log(e.target.innerText);
+    });
 }
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
-// Ex 34
-// Solucion
-
 
 
 
