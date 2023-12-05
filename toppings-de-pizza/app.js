@@ -231,8 +231,14 @@
 //     console.log(toppings);
 // }
 
-// Ex 34 Mostrar los valores de los toppings en consola al hacer click
+// Ex 34 Agregar un adEventListener
 // Solucion
+
+const albahaca = document.getElementById('albahaca');
+
+function mostrarClic(topping) {
+    console.log(topping);
+}
 
 // Ex 34
 // Solucion
