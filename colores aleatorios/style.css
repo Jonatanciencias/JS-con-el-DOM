@@ -1,6 +1,7 @@
 /*Colores  Root*/
 :root {
     --BoxColor: rgba(255, 255, 255, 0.2);
+    --grayText: #1A181B
 }
 
 /*Universal Reset*/
@@ -48,4 +49,41 @@ body {
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: none;
+}
+
+/*Estilo de el texto*/
+
+#colorCode{
+    letter-spacing: 0.9em;
+    font-weight: bolder;
+    font-size: 2.5em;
+    padding: 5px 40px 60px 20px;
+    color: var(--grayText);
+}
+
+/*Estilo del boton*/
+
+#btnColor {
+    border: none;
+    width: 8.5em;
+    height: 2.5em;
+    box-shadow: 2px 5px 20px -7px #000;
+    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    border-radius:15px;
+    cursor:pointer;
+    color: var(--grayText);
+    text-decoration:none;
+    text-shadow:0 1px 0 #e1e2ed;
+    margin: 20px 20px 0 20px;
+    font-size: 1em;
+    font-weight: bold;
+    user-select: none;
+}
+
+#btnColor:hover {
+    background: #bab1ba linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+}
+#btnColor:active {
+    position:relative;
+    top:1px;
 }
