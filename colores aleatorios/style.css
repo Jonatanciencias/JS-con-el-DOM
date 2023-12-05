@@ -9,10 +9,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Satisfy-Regular', sans-serif;
 }
 
 /* General Styles */
+
+@font-face {
+    font-family: Satisfy-Regular;
+    src: url("assets/Satisfy-Regular.ttf");
+}
 
 body {
 
