@@ -20,8 +20,7 @@ textoAzul.innerText = azul;
 // Actualizar el texto y el color de fondo
 function actualizarColor (rojo, verde, azul) {
     // Plantilla literal para varibales dentro del texto
-    const colorRGB = `rgb(${rojo}, ${verde}, ${azul})`;
-    document.body.style.backgroundColor = colorRGB;
+    document.body.style.backgroundColor = `rgb(${rojo}, ${verde}, ${azul})`;
 }
 
 // event listener para cada uno de los elementos input
