@@ -51,7 +51,7 @@ body {
 }
 
 .contenedorInterno {
-    width: 80%;
+    width: 90%;
 }
 
 /*Contenido*/
@@ -64,7 +64,7 @@ body {
 }
 
 #cita {
-    font-size: 32px;
+    font-size: 25px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@ body {
 
 #autor {
     width: 100%;
-    font-size: 25px;
+    font-size: 23px;
     display: flex;
     align-items: center;
     justify-content: center;
