@@ -95,23 +95,26 @@ body {
 
 /*Estilo bootstrap boton 1 en estado iniciar*/
 #btnInicioPausa.iniciar,
-#btnInicioPausa.iniciar i {
+#btnInicioPausa.iniciar > i {
     background-color: rgb(164, 217, 146);
     border: none;
     border-radius: 5px;
+    color: #35363b;
 }
 
 #btnInicioPausa.pausar,
-#btnInicioPausa.pausar i {
+#btnInicioPausa.pausar > i {
     background-color: rgb(219, 205, 112, 0.5);
     border: none;
     border-radius: 5px;
+    color: #830b4b;
 }
 
 #btnReiniciar {
     background-color: rgba(255, 105, 180, 0.5);
     border: none;
     border-radius: 5px;
+    color: #35363b;
 }
 
 
