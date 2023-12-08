@@ -1,0 +1,20 @@
+/*Colores  Root*/
+:root {
+    --color: #HEX
+}
+
+/*Universal Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/* General Styles */
+
+body {
+    background: url("assets/blurredBackground.png");
+
+}
