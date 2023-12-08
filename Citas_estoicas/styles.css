@@ -15,5 +15,7 @@
 /* General Styles */
 
 body {
+    background-image: url("assets/fondo.png");
+    background-size: cover;
 
 }
