@@ -9,12 +9,109 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+
+}
+
+@font-face {
+    font-family: PixelifySans-VariableFont_wght;
+    src: url("assets/PixelifySans-VariableFont_wght.ttf");
 }
 
 /* General Styles */
 
 body {
-    background: url("assets/blurredBackground.png");
+    background: url("assets/blurredBackground.png") no-repeat center center/ cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedorPrincipal {
+    width: 80vw;
+    max-width: 400px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.contenedorBtns {
+    padding: 20px;
 
 }
+
+#cronometro {
+    width: 80%;
+    margin-top: 70px;
+    font-size: 50px;
+    font-weight: bold;
+    user-select: none;
+    font-family: PixelifySans-VariableFont_wght, sans-serif;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #171e23;
+    -webkit-backdrop-filter: blur(5px);
+    -webkit-box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75);
+    box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75);
+}
+
+.contenedorInterno {
+    width: 70vw;
+    max-width: 350px;
+    min-height: 350px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.02);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+/*Estilo bootstrap boton 1 en estado iniciar*/
+#btnInicioPausa.iniciar,
+#btnInicioPausa.iniciar i {
+    background-color: rgb(164, 217, 146);
+    border: none;
+    border-radius: 5px;
+}
+
+#btnInicioPausa.pausar,
+#btnInicioPausa.pausar i {
+    background-color: rgb(219, 205, 112, 0.5);
+    border: none;
+    border-radius: 5px;
+}
+
+#btnReiniciar {
+    background-color: rgba(255, 105, 180, 0.5);
+    border: none;
+    border-radius: 5px;
+}
+
+

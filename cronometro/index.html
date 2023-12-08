@@ -2,8 +2,12 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+<!--	Estilos CSS-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
+<!--	Favicon-->
 	<link rel="icon" type="image/png" href="assets/favicon.png">
+<!--	Iconos de bootstrap-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 	<title>Cronometro</title>
 </head>
 <body>
@@ -11,8 +15,12 @@
 	<div class="contenedorInterno">
 		<div id="cronometro">00:00:00</div>
 		<div class="contenedorBtns">
-			<button id="btnInicioPausa" class="btn iniciar">Iniciar</button>
-			<button id="btnReiniciar" class="btn">Reiniciar</button>
+			<button id="btnInicioPausa" class="btn iniciar">
+				<i class="bi bi-play-fill"></i>
+			</button>
+			<button id="btnReiniciar" class="btn">
+				<i class="bi bi-arrow-counterclockwise"></i>
+			</button>
 		</div>
 	</div>
 </main>
