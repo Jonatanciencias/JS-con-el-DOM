@@ -1,9 +1,9 @@
 /* Colores Root */
 :root {
-    --verdeClaro: #8BDB70A8;
-    --amarilloClaro: #DBCD70FF; /* Define el color principal como una variable */
-    --rosadoClaro: #FF69B47F;
-    --rosadoOscuro: #850D4CFF;
+    --verdeClaro: #8BDB70A8;  /* Define un color verde claro como variable */
+    --amarilloClaro: #DBCD70FF;  /* Define un color amarillo claro como variable */
+    --rosadoClaro: #FF69B47F;  /* Define un color rosado claro como variable */
+    --rosadoOscuro: #850D4CFF;  /* Define un color rosado oscuro como variable */
 }
 
 /* Universal Reset */
@@ -16,12 +16,12 @@
 /* Definición de la fuente personalizada */
 @font-face {
     font-family: PixelifySans-VariableFont_wght;
-    src: url("assets/PixelifySans-VariableFont_wght.ttf");
+    src: url("assets/PixelifySans-VariableFont_wght.ttf");  /* Cargar la fuente personalizada */
 }
 
 /* Estilos Generales */
 body {
-    background: url("assets/blurredBackground.png") no-repeat center center/ cover;
+    background: url("assets/blurredBackground.png") no-repeat center center/ cover;  /* Imagen de fondo */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -39,9 +39,9 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.03);  /* Color de fondo del contenedor principal */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    backdrop-filter: blur(5px);  /* Efecto de desenfoque en el fondo */
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.02);
 }
@@ -59,13 +59,13 @@ body {
     font-weight: bold;
     user-select: none;
     font-family: PixelifySans-VariableFont_wght, sans-serif;
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.5);  /* Color de fondo del cronómetro */
     border-radius: 16px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);  /* Efecto de desenfoque en el fondo */
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #171e23;
     -webkit-backdrop-filter: blur(5px);
-    -webkit-box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75);  /* Sombra interna */
     -moz-box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75);
     box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75);
 }
@@ -75,10 +75,10 @@ body {
     width: 70vw;
     max-width: 350px;
     min-height: 350px;
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(255, 255, 255, 0.03);  /* Color de fondo del contenedor interno */
     border-radius: 50%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    backdrop-filter: blur(5px);  /* Efecto de desenfoque en el fondo */
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 0.02);
     display: flex;
@@ -107,7 +107,7 @@ body {
 
 #btnInicioPausa.btnPlay:hover,
 #btnInicioPausa.btnPlay:hover {
-    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5);
+    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5);  /* Sombra al pasar el puntero */
 }
 
 /* Estilo del botón de iniciar/pausar en estado 'stop' */
@@ -121,7 +121,7 @@ body {
 
 #btnInicioPausa.btnStop:hover,
 #btnInicioPausa.btnStop:hover {
-    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5);
+    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5);  /* Sombra al pasar el puntero */
 }
 
 /* Estilo del botón de reiniciar */
@@ -132,5 +132,5 @@ body {
 }
 
 #btnReiniciar:hover {
-    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5);
+    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5);  /* Sombra al pasar el puntero */
 }
