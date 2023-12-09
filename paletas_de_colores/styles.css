@@ -1,29 +1,35 @@
-/* Colores Root para ser usados como variables en lugar del HEX del color */
+/* Colores Root */
 :root {
-    --BoxColor: rgba(255, 255, 255, 0.2);  /* Color de fondo del contenedor */
-    --grayText: #1A181B;  /* Color de texto gris */
+    /* Color de fondo del contenedor */
+    --BoxColor: rgba(255, 255, 255, 0.2);
+    /* Color del texto gris */
+    --grayText: #1A181B;
 }
 
-/* Universal Reset */
+/* Reset Universal */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Satisfy-Regular', sans-serif;  /* Fuente principal del documento */
+    /* Fuente predeterminada para todo el documento */
+    font-family: 'Satisfy-Regular', sans-serif;
 }
 
 /* Estilos Generales */
 @font-face {
+    /* Carga de la fuente personalizada */
     font-family: Satisfy-Regular;
-    src: url("assets/Satisfy-Regular.ttf");  /* Cargar la fuente personalizada */
+    src: url("assets/Satisfy-Regular.ttf");
 }
 
 body {
     height: 100vh;
-    background-color: #2b807B;  /* Color de fondo del cuerpo */
+    /* Color de fondo para el cuerpo */
+    background-color: #2b807B;
     text-align: center;
 }
 
+/* Clase para centrar elementos con flexbox */
 .centrarFlex {
     display: flex;
     justify-content: center;
@@ -36,100 +42,56 @@ body {
     width: 450px;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url("assets/colorful-popsicles.png");  /* Imagen de fondo */
+    /* Imagen de fondo del contenedor */
+    background-image: url("assets/colorful-popsicles.png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: var(--BoxColor);  /* Utiliza la variable de color de fondo */
+    /* Color de fondo con transparencia */
+    background-color: var(--BoxColor);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Sombra suave */
-    backdrop-filter: blur(5px);  /* Efecto de desenfoque en el fondo */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Efecto de desenfoque en el fondo */
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: none;
 }
 
-/* Estilo del Título */
-h1 {
-    font-size: 3rem;
-    width: 100%;
-    margin: 20px 10px;  /* Márgenes superior e inferior de 20px, márgenes izquierdo y derecho de 10px */
+/* Estilo del Texto */
+#colorCode {
+    letter-spacing: 0.9em;
+    font-weight: bolder;
+    font-size: 2.5em;
+    /* Espaciado interno del texto */
+    padding: 5px 40px 60px 20px;
+    color: var(--grayText);
 }
 
-/* Estilo para cada elemento de la lista de Toppings */
-.topping {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--raisin-black);  /* Utiliza la variable de color de texto */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    margin: 15px 0;
+/* Estilo del Botón */
+#btnColor {
     border: none;
-}
-
-/* Estilo para los elementos de la lista de Toppings */
-ul {
-    width: 95%;
-    height: 100%;
-}
-
-/* Estilo para Toppings pares */
-.fondoUno {
-    background-color: var(--persian-orange);  /* Utiliza la variable de color */
-    border-radius: 10px;
-    padding: 15px;
-    -webkit-transition: ease-out 0.4s;  /* Transición suave */
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-}
-
-/* Cambia cuando se pasa el puntero sobre Toppings pares */
-.fondoUno:hover {
-    background-color: darkred;
-    color: lightgray;
+    width: 8.5em;
+    height: 2.5em;
+    /* Sombra y degradado para el botón */
+    box-shadow: 2px 5px 20px -7px #000;
+    background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+    border-radius: 15px;
     cursor: pointer;
-    box-shadow: inset 400px 0 0 0 darkred;  /* Efecto de sombra al pasar el puntero */
-}
-
-/* Estilo para Toppings impares */
-.fondoDos {
-    background-color: var(--sage);
-    border-radius: 10px;
-    padding: 15px;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
-}
-
-/* Cambia cuando se pasa el puntero sobre Toppings impares */
-.fondoDos:hover {
-    background-color: darkred;
-    color: lightgray;
-    cursor: pointer;
-    box-shadow: inset 400px 0 0 0 darkred;
-}
-
-#enlace {
-    padding-bottom: 15px;
+    color: var(--grayText);
     text-decoration: none;
+    text-shadow: 0 1px 0 #e1e2ed;
+    margin: 20px 20px 0 20px;
+    font-size: 1em;
+    font-weight: normal;
+    user-select: none;
 }
 
-/* Nuevo Sabor */
-.nuevoSabor {
-    background-color: aquamarine;
-    border-radius: 10px;
-    padding: 15px;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
+/* Estilo del Botón al pasar el ratón */
+#btnColor:hover {
+    background: #bab1ba linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
 }
 
-/* Cambia cuando se pasa el puntero sobre Nuevo Sabor */
-.nuevoSabor:hover {
-    background-color: greenyellow;
-    color: darkslategray;
-    cursor: pointer;
-    box-shadow: inset 400px 0 0 0 greenyellow;
+/* Estilo del Botón al hacer clic */
+#btnColor:active {
+    position: relative;
+    top: 1px;
 }

@@ -1,9 +1,9 @@
 /* Colores Root */
 :root {
-    --verdeClaro: #8BDB70A8;  /* Define un color verde claro como variable */
-    --amarilloClaro: #DBCD70FF;  /* Define un color amarillo claro como variable */
-    --rosadoClaro: #FF69B47F;  /* Define un color rosado claro como variable */
-    --rosadoOscuro: #850D4CFF;  /* Define un color rosado oscuro como variable */
+    --verdeClaro: #8BDB70;  /* Define un color verde claro como variable */
+    --amarilloClaro: #DBCD70;  /* Define un color amarillo claro como variable */
+    --rosadoClaro: #FF69B4;  /* Define un color rosado claro como variable */
+    --rosadoOscuro: #850D4C;  /* Define un color rosado oscuro como variable */
 }
 
 /* Universal Reset */
