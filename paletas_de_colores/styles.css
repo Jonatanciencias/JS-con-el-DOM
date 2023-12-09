@@ -1,28 +1,26 @@
-/*Colores  Root*/
+/* Colores Root para ser usados como variables en lugar del HEX del color */
 :root {
-    --BoxColor: rgba(255, 255, 255, 0.2);
-    --grayText: #1A181B
+    --BoxColor: rgba(255, 255, 255, 0.2);  /* Color de fondo del contenedor */
+    --grayText: #1A181B;  /* Color de texto gris */
 }
 
-/*Universal Reset*/
-
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Satisfy-Regular', sans-serif;
+    font-family: 'Satisfy-Regular', sans-serif;  /* Fuente principal del documento */
 }
 
 /* Estilos Generales */
-
 @font-face {
     font-family: Satisfy-Regular;
-    src: url("assets/Satisfy-Regular.ttf");
+    src: url("assets/Satisfy-Regular.ttf");  /* Cargar la fuente personalizada */
 }
 
 body {
     height: 100vh;
-    background-color: #2b807B;
+    background-color: #2b807B;  /* Color de fondo del cuerpo */
     text-align: center;
 }
 
@@ -32,58 +30,106 @@ body {
     align-items: center;
 }
 
-/*Contenedor*/
-
-#contenedor{
+/* Contenedor Principal */
+#contenedor {
     height: 220px;
     width: 450px;
     flex-wrap: wrap;
     flex-direction: column;
-    background-image: url("assets/colorful-popsicles.png");
+    background-image: url("assets/colorful-popsicles.png");  /* Imagen de fondo */
     background-size: contain;
     background-repeat: no-repeat;
-    /* From https://css.glass */
-    background-color: var(--BoxColor);
+    background-color: var(--BoxColor);  /* Utiliza la variable de color de fondo */
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+    backdrop-filter: blur(5px);  /* Efecto de desenfoque en el fondo */
     -webkit-backdrop-filter: blur(5px);
     border: none;
 }
 
-/*Estilo de el texto*/
-
-#colorCode{
-    letter-spacing: 0.9em;
-    font-weight: bolder;
-    font-size: 2.5em;
-    padding: 5px 40px 60px 20px;
-    color: var(--grayText);
+/* Estilo del Título */
+h1 {
+    font-size: 3rem;
+    width: 100%;
+    margin: 20px 10px;  /* Márgenes superior e inferior de 20px, márgenes izquierdo y derecho de 10px */
 }
 
-/*Estilo del boton*/
-
-#btnColor {
+/* Estilo para cada elemento de la lista de Toppings */
+.topping {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--raisin-black);  /* Utiliza la variable de color de texto */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin: 15px 0;
     border: none;
-    width: 8.5em;
-    height: 2.5em;
-    box-shadow: 2px 5px 20px -7px #000;
-    background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-    border-radius:15px;
-    cursor:pointer;
-    color: var(--grayText);
-    text-decoration:none;
-    text-shadow:0 1px 0 #e1e2ed;
-    margin: 20px 20px 0 20px;
-    font-size: 1em;
-    font-weight: normal;
-    user-select: none;
 }
 
-#btnColor:hover {
-    background: #bab1ba linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+/* Estilo para los elementos de la lista de Toppings */
+ul {
+    width: 95%;
+    height: 100%;
 }
-#btnColor:active {
-    position:relative;
-    top:1px;
+
+/* Estilo para Toppings pares */
+.fondoUno {
+    background-color: var(--persian-orange);  /* Utiliza la variable de color */
+    border-radius: 10px;
+    padding: 15px;
+    -webkit-transition: ease-out 0.4s;  /* Transición suave */
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+/* Cambia cuando se pasa el puntero sobre Toppings pares */
+.fondoUno:hover {
+    background-color: darkred;
+    color: lightgray;
+    cursor: pointer;
+    box-shadow: inset 400px 0 0 0 darkred;  /* Efecto de sombra al pasar el puntero */
+}
+
+/* Estilo para Toppings impares */
+.fondoDos {
+    background-color: var(--sage);
+    border-radius: 10px;
+    padding: 15px;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+/* Cambia cuando se pasa el puntero sobre Toppings impares */
+.fondoDos:hover {
+    background-color: darkred;
+    color: lightgray;
+    cursor: pointer;
+    box-shadow: inset 400px 0 0 0 darkred;
+}
+
+#enlace {
+    padding-bottom: 15px;
+    text-decoration: none;
+}
+
+/* Nuevo Sabor */
+.nuevoSabor {
+    background-color: aquamarine;
+    border-radius: 10px;
+    padding: 15px;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+/* Cambia cuando se pasa el puntero sobre Nuevo Sabor */
+.nuevoSabor:hover {
+    background-color: greenyellow;
+    color: darkslategray;
+    cursor: pointer;
+    box-shadow: inset 400px 0 0 0 greenyellow;
 }
