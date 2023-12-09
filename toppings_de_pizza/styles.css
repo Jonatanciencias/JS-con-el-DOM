@@ -1,135 +1,135 @@
-/* Colores  Root para ser usados como variables en lugar del HEX del color */
+/* Estilos para la página de generación de colores aleatorios */
+
+/* Se define una variable de color en la raíz del documento */
 :root {
-    --silver: #c8c8c8ff;
-    --silver-2: #b3b3b3ff;
-    --sage: #bbb891ff;
-    --persian-orange: #dc965aff;
-    --raisin-black: #242325ff;
+    --color: #HEX; /* Reemplazar HEX con el valor deseado o dejar como está */
 }
 
-/* Universal Reset */
-
+/* Reset universal de estilos para todos los elementos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
 }
 
-/* Estilos Generales */
+/* Definición de la fuente personalizada PixelifySans-VariableFont_wght */
+@font-face {
+    font-family: PixelifySans-VariableFont_wght;
+    src: url("assets/PixelifySans-VariableFont_wght.ttf");
+}
 
+/* Estilos generales para el cuerpo del documento */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    background: url("assets/pizzaItaliana.jpg") no-repeat center center/cover;
+    /* Fondo con una imagen desenfocada centrada y cubriendo toda la pantalla */
+    background: url("assets/blurredBackground.png") no-repeat center center/ cover;
+    height: 100vh; /* Altura del cuerpo igual a la altura de la ventana */
+    display: flex; /* Modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    text-align: center; /* Alineación del texto al centro */
 }
 
-/* Estilo para el contenedor rectangular principal */
-
-#contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    width: 80vh;
-    max-width: 600px;
-    /* From https://css.glass */
-    background: rgba(244, 242, 231, 0.21);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.9px);
-    -webkit-backdrop-filter: blur(8.9px);
-    border: 1px solid rgba(244, 242, 231, 0.15);
+/* Contenedor principal con estilos específicos */
+.contenedorPrincipal {
+    width: 80vw; /* Ancho del 80% del viewport width */
+    max-width: 400px; /* Ancho máximo de 400px */
+    min-height: 400px; /* Altura mínima de 400px */
+    display: flex; /* Modelo de caja flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border-radius: 50%; /* Bordes redondeados al 50% para formar un círculo */
+    background: rgba(255, 255, 255, 0.03); /* Fondo semi-transparente */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    backdrop-filter: blur(5px); /* Desenfoque del fondo */
+    -webkit-backdrop-filter: blur(5px); /* Desenfoque del fondo para WebKit */
+    border: 1px solid rgba(255, 255, 255, 0.02); /* Borde semi-transparente */
 }
 
-/* Estilo para el titulo, tambien se podria usar el id titulo */
-h1 {
-    font-size: 3rem;
-    width: 100%;
-    margin: 20px 10px;
+/* Contenedor de botones con relleno */
+.contenedorBtns {
+    padding: 20px;
 }
 
-/* Estilo para cada elemento de la lista de Toppings */
-.topping {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--raisin-black); /* Caso de uso de colores Root */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 80px;
-    margin: 15px 0;
-    border: none;
+/* Estilos específicos para el elemento con id 'cronometro' */
+#cronometro {
+    width: 80%; /* Ancho del 80% */
+    margin-top: 70px; /* Margen superior de 70px */
+    font-size: 50px; /* Tamaño de fuente de 50px */
+    font-weight: bold; /* Fuente en negrita */
+    user-select: none; /* No permite la selección del texto */
+    font-family: PixelifySans-VariableFont_wght, sans-serif; /* Fuente personalizada */
+    background: rgba(255, 255, 255, 0.5); /* Fondo semi-transparente */
+    border-radius: 16px; /* Bordes redondeados */
+    backdrop-filter: blur(5px); /* Desenfoque del fondo */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borde semi-transparente */
+    color: #171e23; /* Color de texto */
+    -webkit-backdrop-filter: blur(5px); /* Desenfoque del fondo para WebKit */
+    -webkit-box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75); /* Sombra interna para WebKit */
+    -moz-box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75); /* Sombra interna para Mozilla */
+    box-shadow: inset 10px 10px 21px -8px rgba(0,0,0,0.75); /* Sombra interna */
 }
 
-/* Estilo para los elementos de la lista de Toppings, tambien se podria usar el id toppingsList */
-ul {
-    width: 95%;
-    height: 100%;
+/* Contenedor interno con estilos específicos */
+.contenedorInterno {
+    width: 70vw; /* Ancho del 70% del viewport width */
+    max-width: 350px; /* Ancho máximo de 350px */
+    min-height: 350px; /* Altura mínima de 350px */
+    background: rgba(255, 255, 255, 0.03); /* Fondo semi-transparente */
+    border-radius: 50%; /* Bordes redondeados al 50% */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    backdrop-filter: blur(5px); /* Desenfoque del fondo */
+    -webkit-backdrop-filter: blur(5px); /* Desenfoque del fondo para WebKit */
+    border: 1px solid rgba(255, 255, 255, 0.02); /* Borde semi-transparente */
+    display: flex; /* Modelo de caja flexible */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
-/* Fondo para Toppings pares */
-.fondoUno {
-    background-color: var(--persian-orange); /* Caso de uso de colores Root */
-    border-radius: 10px;
-    padding: 15px;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
+/* Estilos comunes para los botones */
+.btn {
+    width: 70px; /* Ancho de 70px */
+    height: 70px; /* Altura de 70px */
+    font-size: 30px; /* Tamaño de fuente de 30px */
+    margin: 10px; /* Margen de 10px */
+    padding: 5px; /* Relleno de 5px */
 }
 
-/* Cambia para cuando paso por encima el puntero */
-.fondoUno:hover {
-    background-color: darkred;
-    color: lightgray;
-    cursor: pointer;
-    box-shadow: inset 400px 0 0 0 darkred;
+/* Estilo de botón de inicio/pausa en estado de reproducción */
+#btnInicioPausa.btnPlay,
+#btnInicioPausa.btnPlay i {
+    background-color: rgb(164, 217, 146); /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
-/* Fondo para Toppings impares */
-.fondoDos {
-    background-color: var(--sage); /* Caso de uso de colores Root */
-    border-radius: 10px;
-    padding: 15px;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
+#btnInicioPausa.btnPlay:hover,
+#btnInicioPausa.btnPlay:hover {
+    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5); /* Sombra al hacer hover */
 }
 
-/* Cambia para cuando paso por encima el puntero */
-.fondoDos:hover {
-    background-color: darkred;
-    color: lightgray;
-    cursor: pointer;
-    box-shadow: inset 400px 0 0 0 darkred;
+/* Estilo de botón de inicio/pausa en estado de pausa */
+#btnInicioPausa.btnStop,
+#btnInicioPausa.btnStop i {
+    background-color: rgb(219, 205, 112); /* Color de fondo */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    color: #850d4c; /* Color del texto */
 }
 
-#enlace {
-    padding-bottom: 15px;
-    text-decoration: none;
+#btnInicioPausa.btnStop:hover,
+#btnInicioPausa.btnStop:hover {
+    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5); /* Sombra al hacer hover */
 }
 
-/*Nuevo sabor*/
-
-.nuevoSabor {
-    background-color: aquamarine; /* Caso de uso de colores Root */
-    border-radius: 10px;
-    padding: 15px;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
+/* Estilo de botón de reinicio */
+#btnReiniciar {
+    background-color: rgba(255, 105, 180, 0.5); /* Color de fondo semi-transparente */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
 }
 
-/* Cambia para cuando paso por encima el puntero */
-.nuevoSabor:hover {
-    background-color: greenyellow;
-    color: darkslategray;
-    cursor: pointer;
-    box-shadow: inset 400px 0 0 0 greenyellow;
+#btnReiniciar:hover {
+    box-shadow: 2px 9px 25px -4px rgba(0,0,0,0.5); /* Sombra al hacer hover */
 }
