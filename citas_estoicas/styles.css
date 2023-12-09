@@ -8,25 +8,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif; /* Aplica la fuente Lato a todo el documento */
+    /* Aplica la fuente Lato a todo el documento */
+    font-family: 'Lato', sans-serif;
 }
 
 /* General Styles */
 
+/* Define la fuente Courgette */
 @font-face {
-    font-family: Courgette; /* Define la fuente Courgette */
+    font-family: Courgette;
     src: url("assets/Courgette-Regular.ttf");
 }
 
 body {
+    /* Flexbox para centrar el contenido */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: url("assets/fondo.png") no-repeat center center/ cover; /* Establece una imagen de fondo centrada y cubriéndolo */
+    /* Imagen de fondo centrada y que cubre todo el cuerpo */
+    background: url("assets/fondo.png") no-repeat center center/cover;
 }
 
+/* Clase para centrar el contenido con flexbox */
 .contenidoCentrado {
     display: flex;
     flex-wrap: wrap;
@@ -42,12 +47,16 @@ body {
     max-width: 600px;
     min-height: 500px;
     padding: 5px;
+    /* Margen a la izquierda de 300px */
     margin-left: 300px;
     border-radius: 50px;
-    background: linear-gradient(145deg, #b2b2b2, #d4d4d4); /* Aplica un degradado de color al contenedor */
-    box-shadow:  20px 20px 60px #a8a8a8, -20px -20px 60px #e4e4e4; /* Agrega una sombra bidireccional al contenedor */
+    /* Degradado de color al contenedor */
+    background: linear-gradient(145deg, #b2b2b2, #d4d4d4);
+    /* Sombra bidireccional al contenedor */
+    box-shadow: 20px 20px 60px #a8a8a8, -20px -20px 60px #e4e4e4;
 }
 
+/* Contenedor Interno */
 .contenedorInterno {
     width: 90%;
 }
@@ -56,6 +65,7 @@ body {
 
 #titulo {
     width: 100%;
+    /* Estilo de la fuente Courgette */
     font-family: Courgette, cursive;
     font-weight: bolder;
     text-align: center;
@@ -64,7 +74,7 @@ body {
 #cita {
     font-size: 25px;
     width: 80%;
-    height: 80% ;
+    height: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +89,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    /* Estilo de la fuente Courgette */
     font-family: Courgette, cursive;
 }
 
@@ -86,5 +97,7 @@ body {
     width: 150px;
     height: 50px;
     font-size: 20px;
+    /* Estilo de la fuente más ligera */
     font-weight: lighter;
 }
+
