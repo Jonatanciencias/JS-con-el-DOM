@@ -1,3 +1,14 @@
+/**
+ * Arreglo de citas con sus respectivos autores y textos.
+ * @typedef {Object} Cita
+ * @property {string} autor - El autor de la cita.
+ * @property {string} texto - El texto de la cita.
+ */
+
+/**
+ * Arreglo de citas.
+ * @type {Array.<Cita>}
+ */
 let citas = [
     {
         'autor': 'Zenón de Citio',
@@ -17,7 +28,7 @@ let citas = [
     },
     {
         'autor': 'Marco Aurelio',
-        'texto': 'No vivas como si fueras a vivir diez mil años. La muerte te acecha. Mientras tanto, sé feli'
+        'texto': 'No vivas como si fueras a vivir diez mil años. La muerte te acecha. Mientras tanto, sé feliz'
     },
     {
         'autor': 'Marco Aurelio',
@@ -43,5 +54,4 @@ let citas = [
         'autor': 'Confucio',
         'texto': 'El mejor guerrero es el que lucha contra sí mismo.'
     },
-
-]
+];
