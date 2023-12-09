@@ -1,18 +1,18 @@
-/*Colores  Root*/
+/* Colores Root */
 :root {
-    --color: #HEX
+    --color: #HEX;  // Definir un color personalizado usando una variable
 }
 
-/*Universal Reset*/
-
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Styles */
+/* Estilos Generales */
 
+/* Fuentes personalizadas */
 @font-face {
     font-family: PixelifySans;
     src: url("/colores_RGB/assets/PixelifySans-VariableFont_wght.ttf");
@@ -29,10 +29,11 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: rgb(23, 41, 56);
+    background-color: rgb(23, 41, 56);  // Fondo principal del cuerpo
 }
 
-.contenedorPrincipal{
+/* Contenedor Principal */
+.contenedorPrincipal {
     width: 50vw;
     max-width: 200px;
     min-height: 350px;
@@ -41,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    /* From https://css.glass */
+    /* Degradado de fondo */
     background-color: rgb(142, 197, 252, 0.2);
     background-image: linear-gradient(45deg, rgba(142, 197, 252, 0.5) 10%, rgba(224, 195, 252, 0.8) 100%);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -49,7 +50,8 @@ body {
     -webkit-backdrop-filter: blur(5px);
 }
 
-.color{
+/* Estilo para cada elemento de color en el contenedor principal */
+.color {
     padding: 20px;
     margin: 10px;
     font-size: 1.6em;
@@ -61,17 +63,19 @@ body {
     align-items: center;
 }
 
+/* Estilo para el texto dentro de cada elemento de color */
 .color > p {
     font-family: Pangolin, sans-serif;
     font-weight: lighter;
     text-shadow: 2px 2px 3px #7A7A7A;
 }
 
+/* Estilo para las etiquetas y los párrafos */
 label, p {
     margin: 5px;
 }
 
+/* Estilo específico para el color verde */
 #verde {
     color: greenyellow;
 }
-
