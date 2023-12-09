@@ -2,12 +2,16 @@
 const btnColor = document.getElementById('btnColor');
 const colorCode = document.getElementById('colorCode');
 
-// Función para generar los colores
-function randomColorGenerator () {
+/**
+ * Genera un color hexadecimal aleatorio.
+ * @returns {string} - Color hexadecimal generado.
+ */
+function randomColorGenerator() {
     let digitos = '0123456789ABCDEF';
     let colorHex = '#';
-// genera un numero de 0 a 16 (index) y despues escoge un caracter con ese
-// index en digitos para despues añadirlo a colorHex
+
+    // Genera un número de 0 a 16 (índice) y después elige un carácter con ese índice en 'digitos',
+    // luego lo agrega a 'colorHex'.
     for (let i = 0; i < 6; i++) {
         let randomIndex = Math.floor(Math.random() * 16);
         colorHex += digitos[randomIndex];
@@ -15,13 +19,15 @@ function randomColorGenerator () {
     return colorHex;
 }
 
-// Asocia el click en el btnColor con la funcion randomColorGenerator y crea
-// un funcion anidada con dos acciones
+// Asocia el evento de clic en el btnColor con la función randomColorGenerator y crea
+// una función anidada con dos acciones.
 btnColor.addEventListener('click', function () {
-    // Obtiene el colorCode usando la funcion randomColorGenerator
+    // Obtiene el color hexadecimal usando la función randomColorGenerator.
     let randomColor = randomColorGenerator();
-    // Actualiza el texto
+    
+    // Actualiza el texto del elemento colorCode con el color hexadecimal generado.
     colorCode.textContent = randomColor;
-    // Actualiza el color de fondo
+    
+    // Actualiza el color de fondo del cuerpo del documento.
     document.body.style.backgroundColor = randomColor;
 });
