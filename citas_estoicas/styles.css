@@ -1,21 +1,20 @@
-/*Colores  Root*/
+/* Colores Root */
 :root {
-    --color: #HEX
+    --color: #HEX; /* Define una variable de color hexadecimal (sustituye HEX por el valor deseado) */
 }
 
-/*Universal Reset*/
-
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif; /* Aplica la fuente Lato a todo el documento */
 }
 
 /* General Styles */
 
 @font-face {
-    font-family: Courgette;
+    font-family: Courgette; /* Define la fuente Courgette */
     src: url("assets/Courgette-Regular.ttf");
 }
 
@@ -25,7 +24,7 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
-    background: url("assets/fondo.png") no-repeat center center/ cover;
+    background: url("assets/fondo.png") no-repeat center center/ cover; /* Establece una imagen de fondo centrada y cubriéndolo */
 }
 
 .contenidoCentrado {
@@ -45,16 +44,15 @@ body {
     padding: 5px;
     margin-left: 300px;
     border-radius: 50px;
-    background: linear-gradient(145deg, #b2b2b2, #d4d4d4);
-    box-shadow:  20px 20px 60px #a8a8a8,
-    -20px -20px 60px #e4e4e4;
+    background: linear-gradient(145deg, #b2b2b2, #d4d4d4); /* Aplica un degradado de color al contenedor */
+    box-shadow:  20px 20px 60px #a8a8a8, -20px -20px 60px #e4e4e4; /* Agrega una sombra bidireccional al contenedor */
 }
 
 .contenedorInterno {
     width: 90%;
 }
 
-/*Contenido*/
+/* Contenido */
 
 #titulo {
     width: 100%;
