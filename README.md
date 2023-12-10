@@ -9,9 +9,8 @@
 </pre>
 ✲꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏✲
 
-!!! note
-
-    ¡Bienvenido a mi colección de mini proyectos diseñados para practicar la manipulación del DOM con JavaScript! 
+> ¡Bienvenido a mi colección de mini proyectos diseñados para practicar la manipulación del DOM con JavaScript!
+ 
 
 ## Mini Proyectos de FreeCodeCamp
 
