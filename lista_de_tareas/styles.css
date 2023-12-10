@@ -40,29 +40,29 @@ body {
 }
 .contenedorInput {
     width: 100%;
-    min-height: 600px;
-    padding: 1px 10px 10px 10px ;
-    background-color: #e5e5f7;
-    background-size: 46px 46px;
-    background-image:  repeating-linear-gradient(0deg, #444cf7, #444cf7 1px, #f8f2d2 1px, #f8f2d2);
-    border-radius: 20px;
+    padding: 5px;
+    background: url("assets/noise.png") no-repeat center center/ cover;
+    border-radius: 15px;
     display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-
+    box-shadow: 2px 3px 65px 1px rgba(97,12,73,0.57);
+    -webkit-box-shadow: 2px 3px 65px 1px rgba(97,12,73,0.57);
+    -moz-box-shadow: 2px 3px 65px 1px rgba(97,12,73,0.57);
 }
 
 #titulo {
     font-family: Courgette, sans-serif;
     font-size: 2.5em;
-}
-
-#listaTareas {
-    font-family: Handlee, sans-serif;
+    text-shadow: 2px 3px 10px rgba(57,9,60,0.56);
+    margin-bottom: 20px;
 }
 
 input {
-    background: #bfecce;
+    background: #d6ffdf;
     width: 75%;
     height: 35px;
     font-size: 1.2em;
@@ -81,67 +81,91 @@ button {
     border-radius: 10px;
     margin: 4px 5px;
     font-size: 1em;
+    font-weight: normal;
     border: none;
     cursor: pointer;
     user-select: none;
     background-color: #de7bab;
+    transition: ease-in-out 0.3s;
 
+}
+
+button:hover {
+    background-color: #af4978;
 }
 
 /*Lista de Tareas*/
 
 #listaTareas {
     width: 100%;
-    min-height: 550px;
     margin-top: 3px;
-    background-color: red;
     border-radius: 10px;
+    font-family: Handlee, sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 /*Tareas*/
 
 .tarea {
-    width: 100%;
-    min-height: 70px;
+    width: 98%;
+    min-height: 30px;
     font-size: 23px;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #444cf7;
+    margin: 5px;
     border-radius: 10px;
     display: flex;
-    align-items: center;
+    padding-top: 5px;
+    padding-left: 8px;
+    padding-right: 2px;
     justify-content: space-between;
-    text-align: center;
+    font-family: Handlee, sans-serif;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
 }
 
 /*Tareas completada*/
 
 .tareaCompletada {
     text-decoration: line-through;
-    background-color: #1A181B;
+    background-color: rgba(236, 177, 232, 0.47);
     border: none;
 }
 
+/*Texto de cada tarea*/
+
 .tarea p {
     max-width: 350px;
+    overflow: hidden;
 }
 
 /*Iconos */
 
 i {
-    margin: 5px;
-    padding: 10px;
+    margin: 6px;
     cursor: pointer;
+    font-size: 0.9em;
 }
 
 .iconoCompletar {
-    color: greenyellow;
+    color: #171e23;
+    transition: ease-in-out 0.3s;
 }
 
 .iconoEliminar {
-    color: beige;
+    color: #171e23;
+    transition: ease-in-out 0.3s;
 }
 
-.iconoCompletar:hover, .iconoEliminar:hover {
-    background-color: #7A7A7A;
+.iconoCompletar:hover {
+    color: #2a8335;
+}
+
+.iconoEliminar:hover {
+    color: #800c28;
 }
