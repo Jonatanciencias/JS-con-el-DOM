@@ -1,27 +1,29 @@
-/*Colores  Root*/
+/* Colores Root */
 :root {
-    --color: #HEX
+    --color: #HEX; /* Definir el color principal (sustituir HEX con el valor real) */
 }
 
-/*Universal Reset*/
-
+/* Universal Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Styles */
+/* Estilos Generales */
 
+/* Definir fuentes personalizadas */
 @font-face {
     font-family: Handlee;
     src: url("assets/Handlee-Regular.ttf");
 }
+
 @font-face {
-    font-family: Courgette ;
+    font-family: Courgette;
     src: url("assets/Courgette-Regular.ttf");
 }
 
+/* Estilos del cuerpo de la página */
 body {
     height: 100vh;
     background: url("assets/background-blurred.png") no-repeat center center/ cover;
@@ -33,11 +35,14 @@ body {
     padding: 40px 0;
 }
 
-/*Contenedor */
+/* Contenedor Principal */
 
+/* Estilo del contenedor externo */
 .contenedorExterno {
     width: 500px;
 }
+
+/* Estilo del contenedor de entrada de tareas */
 .contenedorInput {
     width: 100%;
     padding: 5px;
@@ -49,18 +54,20 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    box-shadow: 2px 3px 65px 1px rgba(97,12,73,0.57);
-    -webkit-box-shadow: 2px 3px 65px 1px rgba(97,12,73,0.57);
-    -moz-box-shadow: 2px 3px 65px 1px rgba(97,12,73,0.57);
+    box-shadow: 2px 3px 65px 1px rgba(97, 12, 73, 0.57);
+    -webkit-box-shadow: 2px 3px 65px 1px rgba(97, 12, 73, 0.57);
+    -moz-box-shadow: 2px 3px 65px 1px rgba(97, 12, 73, 0.57);
 }
 
+/* Estilo del título */
 #titulo {
     font-family: Courgette, sans-serif;
     font-size: 2.5em;
-    text-shadow: 2px 3px 10px rgba(57,9,60,0.56);
+    text-shadow: 2px 3px 10px rgba(57, 9, 60, 0.56);
     margin-bottom: 20px;
 }
 
+/* Estilo de la entrada de texto */
 input {
     background: #d6ffdf;
     width: 75%;
@@ -71,10 +78,11 @@ input {
     border: none;
     border-radius: 10px;
     color: #171e23;
-    box-shadow: inset 14px 15px 41px -16px rgba(0,0,0,0.54);
+    box-shadow: inset 14px 15px 41px -16px rgba(0, 0, 0, 0.54);
     font-family: Handlee, sans-serif;
 }
 
+/* Estilo del botón de añadir */
 button {
     width: 20%;
     height: 35px;
@@ -87,15 +95,15 @@ button {
     user-select: none;
     background-color: #de7bab;
     transition: ease-in-out 0.3s;
-
 }
 
 button:hover {
     background-color: #af4978;
 }
 
-/*Lista de Tareas*/
+/* Lista de Tareas */
 
+/* Estilo del contenedor de lista de tareas */
 #listaTareas {
     width: 100%;
     margin-top: 3px;
@@ -107,8 +115,9 @@ button:hover {
     flex-direction: column;
 }
 
-/*Tareas*/
+/* Tareas */
 
+/* Estilo de cada tarea */
 .tarea {
     width: 98%;
     min-height: 30px;
@@ -121,42 +130,41 @@ button:hover {
     padding-right: 2px;
     justify-content: space-between;
     font-family: Handlee, sans-serif;
-    /* From https://css.glass */
     background: rgba(255, 255, 255, 0.01);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-
 }
 
-/*Tareas completada*/
-
+/* Estilo de tareas completadas */
 .tareaCompletada {
     text-decoration: line-through;
     background-color: rgba(236, 177, 232, 0.47);
     border: none;
 }
 
-/*Texto de cada tarea*/
-
+/* Texto de cada tarea */
 .tarea p {
     max-width: 350px;
     overflow: hidden;
 }
 
-/*Iconos */
+/* Iconos */
 
+/* Estilo de los iconos */
 i {
     margin: 6px;
     cursor: pointer;
     font-size: 0.9em;
 }
 
+/* Estilo del icono de completar */
 .iconoCompletar {
     color: #171e23;
     transition: ease-in-out 0.3s;
 }
 
+/* Estilo del icono de eliminar */
 .iconoEliminar {
     color: #171e23;
     transition: ease-in-out 0.3s;
