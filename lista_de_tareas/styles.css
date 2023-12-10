@@ -15,5 +15,10 @@
 /* General Styles */
 
 body {
-
+    height: 100vh;
+    background: url("assets/background-blurred.png") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
