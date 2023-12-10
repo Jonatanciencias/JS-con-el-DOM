@@ -71,7 +71,7 @@ body {
 }
 
 /* Contenedor Interno */
-.contenedorInterno {
+.contenedorInput {
     width: 70vw;
     max-width: 350px;
     min-height: 350px;
