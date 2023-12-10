@@ -9,11 +9,15 @@
 </pre>
 ✲꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏ ꘏✲
 
+!!! note
+
+    ¡Bienvenido a mi colección de mini proyectos diseñados para practicar la manipulación del DOM con JavaScript! 
+
 ## Mini Proyectos de FreeCodeCamp
 
-¡Bienvenido a mi colección de mini proyectos diseñados para practicar la manipulación del DOM con JavaScript! Estos son parte del curriculum de FreeCodeCamp en español.
+> Estos son parte del curriculum de FreeCodeCamp en español.
 
-## Proyectos
+### Proyectos
 
 1. **Proyecto Toppings de 🍕:**: Personaliza tu propia pizza eligiendo los mejores toppings.
 2. **🎨 Hex Aleatorios**: Genera colores aleatorios en formato hexadecimal.
@@ -22,7 +26,7 @@
 5. **Cronómetro ⌚**: Mide el paso del tiempo en segundos, minutos y horas
 6. **Lista de 📝 Pendientes**: Aplicación para listar las tareas pendientes.
 
-## Instrucciones de Uso
+### Instrucciones de Uso
 
 1. Clona este :octocat:: `git clone https://github.com/Jonatanciencias/JS-con-el-DOM.git`
 2. Abre el proyecto que te interese en tu navegador.
